@@ -223,16 +223,7 @@ public class InputListenerPlayer : InputListenerPlayerBehavior {
     }
 
     public override void SyncInputHistory (RpcArgs pArgs) {
-        InputFrameHistoryItem[] serverItems = pArgs.GetNext<byte[]>().ByteArrayToObject<InputFrameHistoryItem[]>();
-
-        // The serverItems are being sent unreliably and can arrive out of order. We check if the serverItems have arrived too late.
-        if (serverItems.Length == 0 
-            || serverItems[serverItems.Length - 1].inputFrame.frame <= _listener.AuthorativeFrame 
-            || (_listener.AuthorativeInputHistory.Count > 0 && _listener.AuthorativeInputHistory.Peek().inputFrame.frame <= serverItems[serverItems.Length - 1].inputFrame.frame)) {
-            return;
-        }
-        
-        _listener.AddAuthoritativeInputHistory(serverItems);
+        _listener.AddAuthoritativeInputHistory(pArgs.GetNext<byte[]>().ByteArrayToObject<InputFrameHistoryItem[]>());
     }
 
     #endregion

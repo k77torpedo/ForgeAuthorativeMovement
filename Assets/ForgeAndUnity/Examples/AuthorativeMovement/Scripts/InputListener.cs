@@ -109,6 +109,10 @@ public class InputListener {
         ClearLocalInputHistory(_authorativeFrame);
         while (_authorativeInputHistory.Count > 0) {
             InputFrameHistoryItem serverItem = _authorativeInputHistory.Dequeue();
+            if (serverItem.inputFrame.frame <= _authorativeFrame) {
+                continue;
+            }
+
             InputFrameHistoryItem localItem = FindLocalInputHistoryItemOrDefault(serverItem.inputFrame.frame);
             if (localItem.inputFrame.frame == 0) {
                 continue;
