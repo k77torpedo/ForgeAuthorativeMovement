@@ -56,9 +56,13 @@ public class InputListenerPlayer : InputListenerPlayerBehavior {
         }
 
         // The server and the controlling player play the frames they saved.
-        if (networkObject.IsServer || _isOwner) {
+        _listener.PlayFrame(transform);
+
+        // We allow the server to catch up if he is too far behind because of prolonged latency
+        if (networkObject.IsServer && _listener.FramesToPlay.Count > _listener.FrameSyncRate) {
             _listener.PlayFrame(transform);
         }
+
 
         // Reconcile frames when the client is too far away from the server-position.
         if (_isOwner) {
