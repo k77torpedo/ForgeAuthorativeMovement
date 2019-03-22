@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -77,8 +76,7 @@ public class InputListener {
     }
 
     public virtual void AdvanceFrame () {
-        _currentFrame++;
-        _currentInputFrame.frame = _currentFrame;
+        _currentInputFrame.frame = ++_currentFrame;
     }
 
     public virtual void SaveFrame () {
