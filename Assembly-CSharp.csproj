@@ -73,6 +73,8 @@
     <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\CubeForgeGameNetworkObject.cs" />
     <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\ExampleProximityPlayerBehavior.cs" />
     <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\ExampleProximityPlayerNetworkObject.cs" />
+    <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\InputListenerPlayer2Behavior.cs" />
+    <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\InputListenerPlayer2NetworkObject.cs" />
     <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\InputListenerPlayerBehavior.cs" />
     <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\InputListenerPlayerNetworkObject.cs" />
     <Compile Include="Assets\Bearded Man Studios Inc\Generated\UserGenerated\NetworkCameraBehavior.cs" />
@@ -109,6 +111,8 @@
     <Compile Include="Assets\ForgeAndUnity\Examples\AuthorativeMovement\Scripts\InputListener.cs" />
     <Compile Include="Assets\ForgeAndUnity\Examples\AuthorativeMovement\Scripts\InputListenerPlayer.cs" />
     <Compile Include="Assets\ForgeAndUnity\Examples\AuthorativeMovement\Scripts\InputListenerPlayerSpawner.cs" />
+    <Compile Include="Assets\ForgeAndUnity\Examples\AuthorativeMovement2\Scripts\InputListenerPlayer2.cs" />
+    <Compile Include="Assets\ForgeAndUnity\Examples\AuthorativeMovement2\Scripts\InputListenerPlayerSpawner2.cs" />
     <None Include="Assets\Logs\bmslog.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Unity3D Projects/ForgeAuthorativeMovement/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

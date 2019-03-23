@@ -3,6 +3,7 @@ PlayerPath?
 C:/Unity3D Projects/ForgeAuthorativeMovement/Builds/ForgeAuthorativeMovement.exe
 SceneListBegin?
 Assets/Bearded Man Studios Inc/Scenes/MultiplayerMenu.unity
+Assets/ForgeAndUnity/Examples/AuthorativeMovement2/Scenes/MovementTest2.unity
 Assets/ForgeAndUnity/Examples/AuthorativeMovement/Scenes/MovementTest.unity
 SceneListEnd?
 c65dddeecec720280e265ba4018da0f6 Assembly-CSharp.dll:.BMSLogger
@@ -89,7 +90,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
-36c4ba6fe30d13916acf26ca99c17295 Assembly-CSharp.dll:BeardedManStudios.Forge.Networking.Unity.NetworkManager
+cadafdd60510bd3ed6487371efb42fc6 Assembly-CSharp.dll:BeardedManStudios.Forge.Networking.Unity.NetworkManager
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
 780e8f682b3221346c034a6712a0fd25 UnityEngine.Timeline.dll:UnityEngine.Timeline.AnimationPlayableAsset
@@ -125,7 +126,7 @@ b1840d9703fbc95a9d702d967bfcccfe Assembly-CSharp.dll:BeardedManStudios.Forge.Net
 0e1479d4781fcef3d57003e87ac77a34 Assembly-CSharp.dll:.InputListenerPlayer
 038dde89ef9ba19e9c1c22440f467387 Assembly-CSharp.dll:BeardedManStudios.Forge.Networking.Unity.Lobby.LobbyPlayerItem
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
-36c4ba6fe30d13916acf26ca99c17295 Assembly-CSharp.dll:BeardedManStudios.Forge.Networking.Unity.NetworkManager
+cadafdd60510bd3ed6487371efb42fc6 Assembly-CSharp.dll:BeardedManStudios.Forge.Networking.Unity.NetworkManager
 a736ffa9d4bac7b74116dd892403503c Assembly-CSharp.dll:.ChatManager
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ChatMaker
@@ -191,3 +192,5 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
 dd545f3a27b67777b4515ce325031d58 Assembly-CSharp.dll:.MultiplayerMenu
+0e1479d4781fcef3d57003e87ac77a34 Assembly-CSharp.dll:.InputListenerPlayer2
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.InputListenerPlayerSpawner2
