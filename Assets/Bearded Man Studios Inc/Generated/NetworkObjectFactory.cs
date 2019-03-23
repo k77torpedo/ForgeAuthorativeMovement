@@ -35,6 +35,10 @@ namespace BeardedManStudios.Forge.Networking.Generated
 						availableCallback = true;
 						obj = new ExampleProximityPlayerNetworkObject(networker, id, frame);
 						break;
+					case InputListenerPlayer2NetworkObject.IDENTITY:
+						availableCallback = true;
+						obj = new InputListenerPlayer2NetworkObject(networker, id, frame);
+						break;
 					case InputListenerPlayerNetworkObject.IDENTITY:
 						availableCallback = true;
 						obj = new InputListenerPlayerNetworkObject(networker, id, frame);

@@ -48,6 +48,8 @@ MonoBehaviour:
   CubeForgeGameNetworkObject: []
   ExampleProximityPlayerNetworkObject:
   - {fileID: 1000012738253334, guid: feb25ecf90a8d8b4ab922a455249997b, type: 3}
+  InputListenerPlayer2NetworkObject:
+  - {fileID: 2152816213282687925, guid: d43c6ad12cf0d494288585550187e250, type: 3}
   InputListenerPlayerNetworkObject:
   - {fileID: 3035685887411109938, guid: 4c167994b133a8a4494c04de4c92e17c, type: 3}
   NetworkCameraNetworkObject:
