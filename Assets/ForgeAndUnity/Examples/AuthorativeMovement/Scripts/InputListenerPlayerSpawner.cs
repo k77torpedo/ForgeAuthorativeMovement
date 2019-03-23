@@ -33,6 +33,10 @@ public class InputListenerPlayerSpawner : MonoBehaviour {
                 return;
             }
 
+            pPlayer.disconnected += (networker) => {
+                playerBehavior.networkObject.Destroy();
+            };
+
             playerBehavior.networkObject.ownerId = pPlayer.NetworkId;
         });
     }
