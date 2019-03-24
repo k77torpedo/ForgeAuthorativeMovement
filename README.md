@@ -1,7 +1,7 @@
 # Just uploaded: Description is coming :)
 
 # What it is
-This is an authorative movement example for Forge Networking Remastered where players can freely move and jump inside the game without lag or rubber-banding until the player deviates from the server and is corrected - also known as "Server Reconciliation". This is a pattern that allows a client to have more crisp and lag-free movement than just interpolating to the players current position on the server. The player is thus always further than the server and everybody else.
+This is an authorative movement example for Forge Networking Remastered where players can freely move and jump inside the game without lag or rubber-banding until the player deviates from the server and is corrected - also known as "Server Reconciliation". This is a pattern that allows a client to have more crisp and lag-free movement than just interpolating to the players current position on the server. It also means that the player himself is always ahead of the server.
 
 This example also supports actions like jumping, weapon-attacks and the casting of skills to be reconciliated by the server.
 
