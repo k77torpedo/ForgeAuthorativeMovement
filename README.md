@@ -7,7 +7,7 @@ This example also supports actions like jumping, weapon-attacks and the casting 
 
 # How it works
 
-# Additional Remarks and Ideas
+# Further Improvements
 ### Limiting Deviation
 Limiting how far the player can be further than the server is usually a good idea. Set yourself a target like "The player is allowed to be 250 frames further than the server". This can be easily achieved by modifying the `InputListenerPlayer` as follows:
 ```
