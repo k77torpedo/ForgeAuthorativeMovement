@@ -6,6 +6,13 @@ This is an authorative movement example for Forge Networking Remastered where pl
 This example also supports actions like jumping, weapon-attacks and the casting of skills to be reconciliated by the server.
 
 # How it works
+Step by step:
+1) The controlling player saves his input on every frame.
+2) The controlling player plays the frames with the input he saved in order to move, jump, attack etc..
+3) The controlling player sends his saved frames to the server in certain intervals (ex.: every 5 frames).
+4) The server receives the frames and plays them like the controlling player would and saves the results for every frame.
+5) The server sends his results back to the controlling player.
+6) The controlling player receives the results from the server and compares the frames he played to the frames the server played. If he deviated from the server he _reconciliates_ (he corrects himself based on the results of the server).
 
 # Further Improvements
 ### Limiting Deviation
