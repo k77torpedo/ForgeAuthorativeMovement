@@ -23,7 +23,7 @@ if (_isOwner && (_listener.CurrentFrame - _listener.AuthorativeFrame) < 250) {
 When the player is 250 frames ahead of the server he can't send any more inputs, move or take any action before the network stabilizes again. Try it out!
 
 ### Interpolation
-If you want the example to look more smoothly you can turn on interpolation for `networkObject.position` in the Network Contract Wizard (NCF) of Forge Networking Remastered. This will result in reducing stutter when players see each other move.
+If you want the example to look more smoothly you can turn on interpolation for `networkObject.position` in the Network Contract Wizard (NCW) of Forge Networking Remastered. This will result in reducing stutter when players see each other move.
 
 ### Rigidbodies
 Currently the `RigidBody` of all other players on a client build up velocity when jumping for too long. I didn't want to bloat up the example too much so I didn't include a solution for it. By setting the `RigidBody` of all `InputListenerPlayer`s to `isKinematic = true` this issue should be resolved. Sorry for the inconvenience.
