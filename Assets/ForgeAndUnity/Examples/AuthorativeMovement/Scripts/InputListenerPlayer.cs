@@ -27,9 +27,8 @@ public class InputListenerPlayer : InputListenerPlayerBehavior {
 
     protected override void NetworkStart () {
         base.NetworkStart();
-
-        // We are setting up ownership here.
         if (networkObject.IsServer) {
+            networkObject.UpdateInterval = 16L; // 62.5hz update rate
             _owningPlayer = NetworkManager.Instance.Networker.GetPlayerById(networkObject.ownerId);
         } else {
             networkObject.ownerIdChanged += NetworkObject_ownerIdChanged;
@@ -63,13 +62,12 @@ public class InputListenerPlayer : InputListenerPlayerBehavior {
             _listener.PlayFrame(transform);
         }
 
-
         // Reconcile frames when the client is too far away from the server-position.
         if (_isOwner) {
             _listener.ReconcileFrames();
         }
 
-        // The server updates the position on the network for everybody else.
+        // The server updates the position on the network for everyone else.
         if (networkObject.IsServer) {
             networkObject.position = transform.position;
         }
@@ -139,7 +137,7 @@ public class InputListenerPlayer : InputListenerPlayerBehavior {
             return;
         }
 
-        // Here we provide an implementation for the actions we recorded.
+        // Here we provide an implementation for actions.
         for (int i = 0; i < pInputFrame.actions.Length; i++) {
             switch (pInputFrame.actions[i].actionId) {
                 case 1:
