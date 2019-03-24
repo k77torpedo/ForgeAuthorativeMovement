@@ -1,13 +1,14 @@
 # Just uploaded: Description is coming :)
 
 # What it is
-This is an authorative movement example where players can freely move and jump inside the game without lag or rubber-banding until he deviates from the server and is corrected - also known as "Server Reconciliation". This is a pattern that allows a client to have more crisp and lag-free movement than just interpolating to the players current position on the server. The player is thus always further than the server and everybody else.
+This is an authorative movement example for Forge Networking Remastered where players can freely move and jump inside the game without lag or rubber-banding until the player deviates from the server and is corrected - also known as "Server Reconciliation". This is a pattern that allows a client to have more crisp and lag-free movement than just interpolating to the players current position on the server. The player is thus always further than the server and everybody else.
 
 This example also supports actions like jumping, weapon-attacks and the casting of skills to be reconciliated by the server.
 
 # How it works
 
 # Additional Remarks and Ideas
+### Limiting Deviation
 Limiting how far the player can be further than the server is usually a good idea. Set yourself a target like "The player is allowed to be 250 frames further than the server". This can be easily achieved by modifying the `InputListenerPlayer` as follows:
 ```
 if (_isOwner && (_listener.CurrentFrame - _listener.AuthorativeFrame) < 250) {
@@ -16,7 +17,8 @@ if (_isOwner && (_listener.CurrentFrame - _listener.AuthorativeFrame) < 250) {
 ```
 When the player is 250 frames ahead of the server he can't send any more inputs, move or take any action before the network stabilizes again. Try it out!
 
-# Resources
+### Interpolation
+If you want the example to look more smoothly you can turn on interpolation for `networkObject.position` in the Network Contract Wizard (NCF) of Forge Networking Remastered. This will result in reducing stutter when players see each other move.
 
 
 # MIT License
