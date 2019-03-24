@@ -20,7 +20,7 @@ if (_isOwner && (_listener.CurrentFrame - _listener.AuthorativeFrame) < 250) {
     _listener.SaveFrame();
 }
 ```
-When the player is 250 frames ahead of the server he can't save any more inputs which means no inputs can be played by the player or send to the server until network stabilizes again. Try it out!
+When the player is 250 frames ahead of the server he can't save any more inputs which means no inputs can be played by the player or be send to the server until network stabilizes again. Try it out!
 
 ### Interpolation
 If you want the example to look more smoothly you can turn on interpolation for `networkObject.position` in the Network Contract Wizard (NCW) of Forge Networking Remastered. This will result in reducing stutter when players see each other move.
